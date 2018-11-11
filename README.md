@@ -43,7 +43,7 @@ ALTER TABLE `sources`
 
 
 ```sh
-$ git clone ..... cmp
+$ git clone git@github.com:gorlychev/cmp.git cmp
 $ composer install
 ```
 Do not forget to change DB access data in "config" folder
