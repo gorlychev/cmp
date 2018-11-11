@@ -44,6 +44,7 @@ ALTER TABLE `sources`
 
 ```sh
 $ git clone git@github.com:gorlychev/cmp.git cmp
+$ cd cmp
 $ composer install
 ```
 Do not forget to change DB access data in "config" folder
