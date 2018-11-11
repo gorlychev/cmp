@@ -1,0 +1,47 @@
+{
+  "description": "JSON message source for the Yii Framework.",
+  "homepage": "https://github.com/cedx/yii2-json-messages",
+  "license": "MIT",
+  "name": "cedx/yii2-json-messages",
+  "type": "yii2-extension",
+  "authors": [{
+    "email": "cedric@belin.io",
+    "name": "Cédric Belin"
+  }],
+  "autoload": {
+    "psr-4": {"yii\\i18n\\": "lib/"}
+  },
+  "config": {
+    "optimize-autoloader": true
+  },
+  "keywords": [
+    "i18n",
+    "internationalization",
+    "json",
+    "locale",
+    "messages",
+    "translation",
+    "yii2"
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "ext-json": "*",
+    "ext-pcre": "*",
+    "ext-spl": "*",
+    "yiisoft/yii2": "^2.0.12"
+  },
+  "require-dev": {
+    "apigen/apigen": "^5.0.0-RC5",
+    "cedx/coveralls": "^4.0.0",
+    "cedx/phpunit-expect": "^0.4.0",
+    "phing/phing": "^2.16.0",
+    "roave/better-reflection": "dev-master#ced147d"
+  },
+  "scripts": {
+    "coverage": "coveralls var/coverage.xml",
+    "test": "phpunit --colors=auto --verbose"
+  },
+  "support": {
+    "issues": "https://github.com/cedx/yii2-json-messages/issues"
+  }
+}
