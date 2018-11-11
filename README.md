@@ -28,32 +28,16 @@ CREATE TABLE `sources` (
   `status` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `sources`
---
 
 INSERT INTO `sources` (`id`, `name`, `url`, `format`, `status`) VALUES
 (1, 'flub', 'http://dev.titles.ws/jobs/test1/feed-exports/flub.yaml', 'YAML', 1),
 (2, 'glorf', 'http://dev.titles.ws/jobs/test1/feed-exports/glorf.json', 'JSON', 1),
 (3, 'no works', 'http://dev.titles.ws/jobs/test1/feed-exports/glorf-noexists.json', 'JSON', 1);
 
---
--- Indexes for dumped tables
---
 
---
--- Indexes for table `sources`
---
 ALTER TABLE `sources`
   ADD PRIMARY KEY (`id`);
 
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `sources`
---
 ALTER TABLE `sources`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
